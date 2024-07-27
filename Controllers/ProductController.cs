@@ -31,6 +31,11 @@ namespace Project1.Controllers
             return View();
         }
 
+
+
+
+
+
         public IActionResult SaveNew(Product product)
         {
             context.Products.Add(product);
