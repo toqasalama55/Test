@@ -1,0 +1,30 @@
+﻿<form action="/Product/SaveEdit" method="get">
+    <input type ="hidden" name="Id" value="@Model.Id" >
+    <div class="form-group">
+        <label for="exampleInputEmail1">Product Name</label>
+        <input type="text" class="form-control" name="Name"  value ="@Model.Name" id="name" aria-describedby="Name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Description</label>
+        <input type="text" class="form-control" name="Description" value="@Model.Description" id="Description">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Img</label>
+        <input type="text" class="form-control" name="Img" value="@Model.Img" id="Img" placeholder="Img">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Price</label>
+        <input type="number" class="form-control" name="Price" value="@Model.Price" id="Price">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Rate</label>
+        <input type="number" class="form-control" name="Rate" value="@Model.Rate" id="Rate">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Category</label>
+        <input type="number" class="form-control" name="CategoryId" value="@Model.CategoryId" id="CategoryId">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
